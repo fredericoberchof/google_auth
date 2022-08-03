@@ -1,7 +1,14 @@
-import { GoogleLogo } from 'phosphor-react';
-import './styles.scss'
+import { GoogleLogo } from "phosphor-react";
+import {GoogleAuthProvider, signInWithPopup} from "firebase/auth"
+
+import "./styles.scss";
 
 export function SignIn() {
+
+  function handleGoogleSignIn() {
+
+  }
+
   return (
     <div className="container">
       <h1>Acesse sua conta</h1>
@@ -12,7 +19,10 @@ export function SignIn() {
         cadastro.
       </span>
 
-      <button type="button" className="button"> <GoogleLogo /> Entrar com Google</button>
+      <button type="button" className="button" onClick={handleGoogleSignIn}>
+        {" "}
+        <GoogleLogo /> Entrar com Google
+      </button>
     </div>
   );
 }
