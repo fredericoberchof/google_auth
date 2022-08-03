@@ -1,3 +1,4 @@
+import { GoogleLogo } from 'phosphor-react';
 import './styles.scss'
 
 export function SignIn() {
@@ -11,7 +12,7 @@ export function SignIn() {
         cadastro.
       </span>
 
-      <button type="button" className="button"> Entrar com Google</button>
+      <button type="button" className="button"> <GoogleLogo /> Entrar com Google</button>
     </div>
   );
 }
